@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:ap-southeast-1:156962844638:task-definition/authorization-service-varshith:1"
+        LoadBalancerInfo:
+          ContainerName: "authorization-service-varshith"
+          ContainerPort: "8000"
+        PlatformVersion: "LATEST"

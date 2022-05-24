@@ -1,0 +1,159 @@
+2022-05-23 02:20:51.393  WARN 21580 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h28s889ms101µs300ns).
+2022-05-23 09:49:46.033  WARN 21580 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h29m32s43ms78µs).
+2022-05-23 09:54:44.781  INFO 21580 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-23 09:54:44.782  INFO 21580 --- [Thread-8] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-23 09:54:45.025  WARN 21580 --- [Thread-8] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-05-23 09:54:45.026  INFO 21580 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-23 09:54:45.030  INFO 21580 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-23 09:54:49.622  INFO 21580 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-05-23 09:54:49.628  INFO 21580 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-05-23 09:54:49.628  WARN 21580 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/authentication-service/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-05-23 09:54:49.629  INFO 21580 --- [restartedMain] c.d.a.AuthorizationApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-05-23 09:54:49.949  INFO 21580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-23 09:54:49.950  INFO 21580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2022-05-23 09:54:50.045  INFO 21580 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=31dea13d-3401-3a46-9d03-8da282f36fab
+2022-05-23 09:54:50.244  INFO 21580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2022-05-23 09:54:50.245  INFO 21580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-23 09:54:50.245  INFO 21580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-23 09:54:50.319  INFO 21580 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-23 09:54:50.319  INFO 21580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 685 ms
+2022-05-23 09:54:50.337  INFO 21580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-05-23 09:54:50.342  INFO 21580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-05-23 09:54:50.342  INFO 21580 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-05-23 09:54:50.391  INFO 21580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-23 09:54:50.414  INFO 21580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-23 09:54:50.424  INFO 21580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-23 09:54:50.425  INFO 21580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-23 09:54:50.433  WARN 21580 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationApplication': Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.digitalhonors.authorization.AuthorizationApplication] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0]
+2022-05-23 09:54:50.433  INFO 21580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-23 09:54:50.434  INFO 21580 --- [restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-23 09:54:50.641  WARN 21580 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-05-23 09:54:50.642  INFO 21580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-05-23 09:54:50.706  INFO 21580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-05-23 09:54:50.711  INFO 21580 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-05-23 09:54:50.722  INFO 21580 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-23 09:54:50.730 ERROR 21580 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationApplication': Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.digitalhonors.authorization.AuthorizationApplication] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.7.jar:2.6.7]
+	at com.digitalhonors.authorization.AuthorizationApplication.main(AuthorizationApplication.java:20) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.7.jar:2.6.7]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.digitalhonors.authorization.AuthorizationApplication] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:407) ~[spring-orm-5.3.19.jar:5.3.19]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:388) ~[spring-orm-5.3.19.jar:5.3.19]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:335) ~[spring-orm-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/digitalhonors/authorization/repository/UserRepository
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738) ~[spring-core-5.3.19.jar:5.3.19]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.digitalhonors.authorization.repository.UserRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 30 common frames omitted
+
+2022-05-23 09:55:04.941  INFO 21580 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-05-23 09:55:04.946  INFO 21580 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-05-23 09:55:04.947  WARN 21580 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/authentication-service/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-05-23 09:55:04.948  INFO 21580 --- [restartedMain] c.d.a.AuthorizationApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-05-23 09:55:06.210  INFO 21580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-23 09:55:06.269  INFO 21580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2022-05-23 09:55:06.381  INFO 21580 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2748ad87-6bd9-34f7-b17f-6224e0446a96
+2022-05-23 09:55:06.525  INFO 21580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2022-05-23 09:55:06.526  INFO 21580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-23 09:55:06.529  INFO 21580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-23 09:55:06.623  INFO 21580 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-23 09:55:06.623  INFO 21580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1672 ms
+2022-05-23 09:55:06.656  INFO 21580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-05-23 09:55:06.662  INFO 21580 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-05-23 09:55:06.662  INFO 21580 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-05-23 09:55:06.728  INFO 21580 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-23 09:55:06.740  INFO 21580 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-23 09:55:06.826  INFO 21580 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-23 09:55:06.827  INFO 21580 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-23 09:55:07.053  WARN 21580 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-23 09:55:07.501  INFO 21580 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e843c3b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ec1d9c8, org.springframework.security.web.header.HeaderWriterFilter@6230847e, org.springframework.security.web.authentication.logout.LogoutFilter@313afa7a, com.digitalhonors.authorization.filter.JWTFilter@6a00bdf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@620afafe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ff81b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76e85d0a, org.springframework.security.web.session.SessionManagementFilter@11ce8633, org.springframework.security.web.access.ExceptionTranslationFilter@6acad7b1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45626130]
+2022-05-23 09:55:07.897  INFO 21580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-23 09:55:08.271  INFO 21580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2022-05-23 09:55:08.535  INFO 21580 --- [restartedMain] c.d.a.AuthorizationApplication           : Started AuthorizationApplication in 4.611 seconds (JVM running for 39960.646)
+2022-05-23 09:55:08.552  INFO 21580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-23 09:55:15.538  INFO 14008 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-05-23 09:55:15.748  INFO 14008 --- [main] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-05-23 09:55:15.749  WARN 14008 --- [main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/authentication-service/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-05-23 09:55:15.776  INFO 14008 --- [main] c.d.a.AuthorizationApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-05-23 09:55:16.877  INFO 14008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-23 09:55:16.981  INFO 14008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interfaces.
+2022-05-23 09:55:17.401  INFO 14008 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fd431842-0a38-375f-8cb6-6c477d87009c
+2022-05-23 09:55:18.255  INFO 14008 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-23 09:55:18.637  INFO 14008 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-23 09:55:18.787  INFO 14008 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-23 09:55:18.906  INFO 14008 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-23 09:55:19.258  INFO 14008 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-23 09:55:19.653  INFO 14008 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-23 09:55:21.186  INFO 14008 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-23 09:55:21.204  INFO 14008 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-23 09:55:22.028  WARN 14008 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-23 09:55:23.266  INFO 14008 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46c19350, org.springframework.security.web.context.SecurityContextPersistenceFilter@47cf65f1, org.springframework.security.web.header.HeaderWriterFilter@5dc1597f, org.springframework.security.web.authentication.logout.LogoutFilter@6f12b637, com.digitalhonors.authorization.filter.JWTFilter@3702d0ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7097ead6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@433db56d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b4b6f3b, org.springframework.security.web.session.SessionManagementFilter@79f59e0e, org.springframework.security.web.access.ExceptionTranslationFilter@530d40b4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@647b3fd3]
+2022-05-23 09:55:23.827  INFO 14008 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-05-23 09:55:24.568  INFO 14008 --- [main] c.d.a.AuthorizationApplicationTests      : Started AuthorizationApplicationTests in 11.066 seconds (JVM running for 14.447)
+2022-05-23 09:55:25.375  INFO 14008 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-23 09:55:25.376  INFO 14008 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-23 09:55:25.385  INFO 14008 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-23 09:55:25.390  INFO 14008 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-23 15:20:46.149  INFO 15856 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-05-23 15:20:46.359  INFO 15856 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2022-05-23 15:20:46.360  WARN 15856 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/authentication-service/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2022-05-23 15:20:46.364  INFO 15856 --- [restartedMain] c.d.a.AuthorizationApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-05-23 15:20:47.822  INFO 15856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-23 15:20:47.953  INFO 15856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interfaces.
+2022-05-23 15:20:48.499  INFO 15856 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2748ad87-6bd9-34f7-b17f-6224e0446a96
+2022-05-23 15:20:50.188  INFO 15856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2022-05-23 15:20:50.210  INFO 15856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-23 15:20:50.210  INFO 15856 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-23 15:20:50.551  INFO 15856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-23 15:20:50.552  INFO 15856 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4162 ms
+2022-05-23 15:20:50.638  INFO 15856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-23 15:20:51.027  INFO 15856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-23 15:20:51.057  INFO 15856 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-05-23 15:20:51.551  INFO 15856 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-23 15:20:51.664  INFO 15856 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-23 15:20:52.168  INFO 15856 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-23 15:20:52.468  INFO 15856 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-23 15:20:53.653  INFO 15856 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-23 15:20:53.669  INFO 15856 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-23 15:20:54.510  WARN 15856 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-23 15:20:55.219  INFO 15856 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b60955d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f34f107, org.springframework.security.web.header.HeaderWriterFilter@2db63ea1, org.springframework.security.web.authentication.logout.LogoutFilter@3a87aec9, com.digitalhonors.authorization.filter.JWTFilter@7af5a3fb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@558a6256, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45eaa57f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3668bc49, org.springframework.security.web.session.SessionManagementFilter@2750643, org.springframework.security.web.access.ExceptionTranslationFilter@7fb2063b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18cd492a]
+2022-05-23 15:20:55.663  INFO 15856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-23 15:20:56.216  INFO 15856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2022-05-23 15:20:56.495  INFO 15856 --- [restartedMain] c.d.a.AuthorizationApplication           : Started AuthorizationApplication in 12.437 seconds (JVM running for 13.685)
+2022-05-23 15:21:26.635  INFO 15856 --- [http-nio-8000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-23 15:21:26.635  INFO 15856 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-23 15:21:26.639  INFO 15856 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-23 15:21:26.710  WARN 15856 --- [http-nio-8000-exec-2] c.d.authorization.filter.JWTFilter       : JWT Token does not begin with Bearer String
